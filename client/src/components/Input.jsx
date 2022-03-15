@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Button } from '../GlobalStyle.jsx'
 import notes from '../notes.js'
 
 function Input() {
@@ -13,12 +14,12 @@ function Input() {
   }
   const handleSubmit = (event) => {
     // event.persist();
-    if (answer === notes[note]) {
+    if (answer === notes[note] || answer === notes[note][0] || answer === notes[note][1]) {
         setCorrect(true)
         setCurrentScore(currentScore + 1)
         setNote(Math.floor(Math.random() * 85))
         if (currentScore > highScore) {
-          setHighScore(currentScore)
+          setHighScore(currentScore + 1)
         }
     } else {
         setCorrect(false)
@@ -37,10 +38,10 @@ function Input() {
           value={answer}
           onChange={handleChange}
         />
-        <button onClick={() => setAnswer(answer + '#')}>#</button>
-        <button onClick={() => setAnswer(answer + 'b')}>b</button>
-        <button onClick={() => handleSubmit()}>Submit!</button>
-        <button>{note}</button>
+        <Button onClick={() => setAnswer(answer + '#')}>#</Button>
+        <Button onClick={() => setAnswer(answer + 'b')}>b</Button>
+        <Button onClick={() => handleSubmit()}>Submit!</Button>
+        <Button>{note}</Button>
       </div>
         {correct === true && <div>Correct</div>}
         {correct === false && <div>Incorrect</div>}
