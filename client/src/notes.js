@@ -49,7 +49,7 @@ const notes = {
   46: 'F',
   47: 'F#' || 'Gb',
   48: 'G',
-  49: 'G#' || 'Ab'
+  49: 'G#' || 'Ab',
   50: 'A',
   51: 'A#' || 'Bb',
   52: 'B',
@@ -61,12 +61,12 @@ const notes = {
   58: 'F',
   59: 'F#' || 'Gb',
   60: 'G',
-  61: 'G#' || 'Ab'
+  61: 'G#' || 'Ab',
   62: 'A',
   63: 'A#' || 'Bb',
   //END OF D STRING
   64: 'G',
-  65: 'G#' || 'Ab'
+  65: 'G#' || 'Ab',
   66: 'A',
   67: 'A#' || 'Bb',
   68: 'B',
@@ -88,3 +88,5 @@ const notes = {
   84: 'D#' || 'Eb',
   //END OF G STRING
 }
+
+export default notes;
