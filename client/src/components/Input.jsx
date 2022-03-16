@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../GlobalStyle.jsx'
+import { Button, GlobalStyles, CenterDiv } from '../GlobalStyle.jsx'
 import notes from '../notes.js'
 
 function Input() {
@@ -28,6 +28,7 @@ function Input() {
   }
   return (
     <>
+    <CenterDiv>
       <div>
         Note:
         <input
@@ -38,6 +39,8 @@ function Input() {
           value={answer}
           onChange={handleChange}
         />
+      </div>
+      <div>
         <Button onClick={() => setAnswer(answer + '#')}>#</Button>
         <Button onClick={() => setAnswer(answer + 'b')}>b</Button>
         <Button onClick={() => handleSubmit()}>Submit!</Button>
@@ -47,6 +50,7 @@ function Input() {
         {correct === false && <div>Incorrect</div>}
         Current Score: {currentScore}
         High Score: {highScore}
+      </CenterDiv>
     </>
   )
 }
