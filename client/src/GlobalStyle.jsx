@@ -283,3 +283,215 @@ export const Dot42 = styled.img`
   transform: translate(1332%, -373%)
 `
 //END OF A STRING
+export const Dot43 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(300%, -352%)
+`
+export const Dot44 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(412%, -352%)
+`
+export const Dot45 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(490%, -352%)
+`
+export const Dot46 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(563%, -352%)
+`
+export const Dot47 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(630%, -352%)
+`
+export const Dot48 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(697%, -350%)
+`
+export const Dot49 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(757%, -350%)
+`
+export const Dot50 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(816%, -350%)
+`
+export const Dot51 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(870%, -329%)
+`
+export const Dot52 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(922%, -329%)
+`
+export const Dot53 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(970%, -329%)
+`
+export const Dot54 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1016%, -327%)
+`
+export const Dot55 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1060%, -327%)
+`
+export const Dot56 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1101%, -327%)
+`
+export const Dot57 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1139%, -327%)
+`
+export const Dot58 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1176%, -327%)
+`
+export const Dot59 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1211%, -327%)
+`
+export const Dot60 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1244%, -327%)
+`
+export const Dot61 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1274%, -327%)
+`
+export const Dot62 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1305%, -327%)
+`
+export const Dot63 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1332%, -327%)
+`
+//END OF D STRING
+
+export const Dot64 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(300%, -332%)
+`
+export const Dot65 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(412%, -332%)
+`
+export const Dot66 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(490%, -332%)
+`
+export const Dot67 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(563%, -332%)
+`
+export const Dot68 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(630%, -327%)
+`
+export const Dot69 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(697%, -326%)
+`
+export const Dot70 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(757%, -325%)
+`
+export const Dot71 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(816%, -324%)
+`
+export const Dot72 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(870%, -324%)
+`
+export const Dot73 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(922%, -324%)
+`
+export const Dot74 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(970%, -324%)
+`
+export const Dot75 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1016%, -324%)
+`
+export const Dot76 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1060%, -324%)
+`
+export const Dot77 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1101%, -324%)
+`
+export const Dot78 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1139%, -323%)
+`
+export const Dot79 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1176%, -323%)
+`
+export const Dot80 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1211%, -323%)
+`
+export const Dot81 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1244%, -323%)
+`
+export const Dot82 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1274%, -323%)
+`
+export const Dot83 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1305%, -322%)
+`
+export const Dot84 = styled.img`
+  max-width:5%;
+  height:auto;
+  transform: translate(1332%, -321%)
+`
