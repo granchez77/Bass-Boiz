@@ -3,7 +3,7 @@ import Input from './Input.jsx'
 import { Button, Bass, Title, BassClef, CenterButton, Dot1, StopResize, Dot } from '../GlobalStyle.jsx'
 
 function App() {
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
   return (
     <StopResize>
       <Title>
@@ -14,7 +14,6 @@ function App() {
       <Button onClick={() => setPlaying(true)}>Play</Button>
       </CenterButton>
       <Bass src={`https://www.fmicassets.com/Damroot/ZoomJpg/10001/0374545506_gtr_frt_001_rl.jpg`} />
-      <Dot src={`https://pngimg.com/uploads/dot/dot_PNG40.png`}/>
       {playing === true && <Input />}
     </StopResize>
   )
