@@ -7,7 +7,17 @@ module.exports = {
       if(err) {
         res.status(500).send();
       } else {
-        res.send(top_3)
+        res.send(top_3);
+      }
+    })
+  },
+
+  postLeaderboard: (req, res) => {
+    model.postLeaderboard(req, (err, score) => {
+      if (err) {
+        res.status(500).send();
+      } else {
+        res.send(score);
       }
     })
   }

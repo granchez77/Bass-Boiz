@@ -10,5 +10,17 @@ module.exports = {
         callback(null, top_3);
       }
     })
+  },
+
+  postLeaderboard: (score, callback) => {
+    const syntax = 'INSERT INTO top_3 (name, score) VALUES(?, ?)';
+    const newScore =
+    db.query(syntax, score, (err, movies) => {
+      if (err) {
+        callback(err);
+      } else {
+        callback(null, score);
+      }
+    })
   }
 }

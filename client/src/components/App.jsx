@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Input from './Input.jsx';
 import Leaderboard from './Leaderboard.jsx';
+import axios from 'axios';
 import { Button, Bass, Title, BassClef, CenterButton, Dot1, StopResize, PlayButton } from '../GlobalStyle.jsx'
 
 function App() {
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
   return (
     <StopResize>
       <Title>
@@ -16,7 +17,7 @@ function App() {
       </CenterButton>
       <Bass src={`https://www.fmicassets.com/Damroot/ZoomJpg/10001/0374545506_gtr_frt_001_rl.jpg`} />
       {playing === true && <Input />}
-      <Leaderboard />
+      {playing === true && <Leaderboard />}
     </StopResize>
   )
 }

@@ -109,9 +109,9 @@ export const Form = styled.input`
   font-family:'Roboto',sans-serif;
   font-weight:300;
 `
-export const slightRight = styled.div`
+export const SlightRight = styled.div`
 transform: translate(-50%, 0%);
-padding-left: 20px;
+padding-left: 99px;
 `
 export const Correct = styled.div`
  border-radius:2em;
