@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Input from './Input.jsx'
-import { Button, Bass, Title, BassClef, CenterButton, Dot1, StopResize, Dot } from '../GlobalStyle.jsx'
+import Input from './Input.jsx';
+import Leaderboard from './Leaderboard.jsx';
+import { Button, Bass, Title, BassClef, CenterButton, Dot1, StopResize, PlayButton } from '../GlobalStyle.jsx'
 
 function App() {
   const [playing, setPlaying] = useState(true);
@@ -11,10 +12,11 @@ function App() {
       Bass Boiz
       </Title>
       <CenterButton>
-      <Button onClick={() => setPlaying(true)}>Play</Button>
+      <PlayButton onClick={() => setPlaying(true)}>Play</PlayButton>
       </CenterButton>
       <Bass src={`https://www.fmicassets.com/Damroot/ZoomJpg/10001/0374545506_gtr_frt_001_rl.jpg`} />
       {playing === true && <Input />}
+      <Leaderboard />
     </StopResize>
   )
 }

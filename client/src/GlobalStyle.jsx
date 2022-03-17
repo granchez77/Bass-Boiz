@@ -17,17 +17,30 @@ export const Button = styled.button`
    background-color:#4eb5f1;
    text-align:center;
    transition: all 0.2s;
-
    &:hover{
     background-color:#4095c6;
     cursor: pointer;
    }
-  // @media all and (max-width:30em){
-  //  a.button3{
-  //   display:block;
-  //   margin:0.2em auto;
-  //  }
   `;
+  export const PlayButton = styled.button`
+   display:inline-block;
+   font-size: 25px;
+   padding:0.3em 1.2em;
+   margin:0 0.3em 0.3em 0;
+   border-radius:2em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-family:'Roboto',sans-serif;
+   font-weight:300;
+   color:#FFFFFF;
+   background-color:#4eb5f1;
+   text-align:center;
+   transition: all 0.2s;
+   &:hover{
+    background-color:#4095c6;
+    cursor: pointer;
+   }
+   `;
 
 export const Bass = styled.img`
   max-width:100%;
@@ -41,6 +54,9 @@ export const Title = styled.h1`
   background-color: #dedcde;
   margin: 0;
 `
+export const LeaderboardTitle = styled.h1`
+text-decoration: underline;
+`
 export const BassClef = styled.img`
   display: block;
   margin-left: auto;
@@ -51,7 +67,7 @@ export const BassClef = styled.img`
 export const CenterButton = styled.div`
   margin: 0;
   position: absolute;
-  top: 27%;
+  top: 17%;
   left: 50%;
   transform: translate(-50%, -0%);
 `
@@ -62,10 +78,60 @@ export const CenterDiv = styled.div`
   bottom: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+`
+export const LeaderBoardCentered = styled.div`
+  margin: 0;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+`
+export const MiddleSpacing = styled.div`
+  padding-top: 5px;
 `
 
 export const StopResize = styled.div`
   min-width: 600px;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+`
+export const Form = styled.input`
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 10px;
+  font-size: 14px;
+  border-radius: 50px;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+`
+export const slightRight = styled.div`
+transform: translate(-50%, 0%);
+padding-left: 20px;
+`
+export const Correct = styled.div`
+ border-radius:2em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#000000;
+ background-color:#90EE90;
+ text-align:center;
+`
+export const Incorrect = styled.div`
+ border-radius:2em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ background-color:#f06262;
+ text-align:center;
 `
 
 export const Dot1 = styled.img`

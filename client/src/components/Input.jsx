@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, GlobalStyles, CenterDiv, Dot1, Dot2, Dot3, Dot4, Dot5, Dot6, Dot7, Dot8, Dot9, Dot10, Dot11, Dot12, Dot13, Dot14, Dot15, Dot16, Dot17, Dot18, Dot19, Dot20, Dot21, Dot22, Dot23, Dot24, Dot25, Dot26, Dot27, Dot28, Dot29, Dot30, Dot31, Dot32, Dot33, Dot34, Dot35, Dot36, Dot37, Dot38, Dot39, Dot40, Dot41, Dot42, Dot43, Dot44, Dot45, Dot46, Dot47, Dot48, Dot49, Dot50, Dot51, Dot52, Dot53, Dot54, Dot55, Dot56, Dot57, Dot58, Dot59, Dot60, Dot61, Dot62, Dot63, Dot64, Dot65, Dot66, Dot67, Dot68, Dot69, Dot70, Dot71, Dot72, Dot73, Dot74, Dot75, Dot76, Dot77, Dot78, Dot79, Dot80, Dot81, Dot82, Dot83, Dot84} from '../GlobalStyle.jsx';
+import { Button, GlobalStyles, CenterDiv, Form, slightRight, Correct, Incorrect, MiddleSpacing, Dot1, Dot2, Dot3, Dot4, Dot5, Dot6, Dot7, Dot8, Dot9, Dot10, Dot11, Dot12, Dot13, Dot14, Dot15, Dot16, Dot17, Dot18, Dot19, Dot20, Dot21, Dot22, Dot23, Dot24, Dot25, Dot26, Dot27, Dot28, Dot29, Dot30, Dot31, Dot32, Dot33, Dot34, Dot35, Dot36, Dot37, Dot38, Dot39, Dot40, Dot41, Dot42, Dot43, Dot44, Dot45, Dot46, Dot47, Dot48, Dot49, Dot50, Dot51, Dot52, Dot53, Dot54, Dot55, Dot56, Dot57, Dot58, Dot59, Dot60, Dot61, Dot62, Dot63, Dot64, Dot65, Dot66, Dot67, Dot68, Dot69, Dot70, Dot71, Dot72, Dot73, Dot74, Dot75, Dot76, Dot77, Dot78, Dot79, Dot80, Dot81, Dot82, Dot83, Dot84} from '../GlobalStyle.jsx';
 import notes from '../notes.js';
 import Dots from './Dots.jsx';
 
@@ -116,8 +116,7 @@ function Input() {
     {note === 84 && <Dot84 src={`https://pngimg.com/uploads/dot/dot_PNG40.png`}/>}
     <CenterDiv>
       <div>
-        Note:
-        <input
+        <Form
           id='note'
           className='form-field'
           type='text'
@@ -130,12 +129,18 @@ function Input() {
         <Button onClick={() => setAnswer(answer + '#')}>#</Button>
         <Button onClick={() => setAnswer(answer + 'b')}>b</Button>
         <Button onClick={() => handleSubmit()}>Submit!</Button>
-        <Button>{note}</Button>
+        {/* <Button>{note}</Button> */}
       </div>
-        {correct === true && <div>Correct</div>}
-        {correct === false && <div>Incorrect</div>}
+        <div>
         Current Score: {currentScore}
+        </div>
+        <slightRight>
         High Score: {highScore}
+        </slightRight>
+        <MiddleSpacing>
+        {correct === true && <Correct>Correct!</Correct>}
+        {correct === false && <Incorrect>Try Again!</Incorrect>}
+        </MiddleSpacing>
       </CenterDiv>
     </>
   )
