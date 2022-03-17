@@ -2,11 +2,12 @@
   "name": "mvp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "jest",
     "dev": "webpack serve",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "start": "nodemon start.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
   "dependencies": {
     "axios": "^0.26.1",
     "express": "^4.17.3",
+    "pg": "^8.7.3",
     "styled-components": "^5.3.3"
   }
 }
